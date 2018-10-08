@@ -6,12 +6,10 @@ function printBadges(name) {
   return name;
 };
 
-let i = 0;
 function tailsNeverFails() {
-  let randomNumber = Math.random()
-  while (randomNumber >= 0.5) {
+  let i = 0;
+  while (Math.random() >= 0.5) {
     i += 1;
-    tailsNeverFails();
-  };
+  }
   return `You got ${i} tails in a row!`
 }
